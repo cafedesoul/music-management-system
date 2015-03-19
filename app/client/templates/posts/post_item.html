@@ -1,7 +1,8 @@
 <template name="postItem">
   <article class="post">
     <section class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      <h3><a href="{{url}}">{{title}}</a> <span>{{domain}}</span></h3>
+      <a href="{{pathFor 'postPage'}}" class="discuss">Discuss</a>
     </section>
   </article>
 </template>
