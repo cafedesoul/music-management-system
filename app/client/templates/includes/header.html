@@ -1,8 +1,12 @@
 <template name="header">
-  <header> 
+  <header>
+
     <h1 class="pull-left"><a href="{{pathFor 'postsList'}}">Home</a></h1>
+
     <div class="pull-right">
-      {{> loginButtons}}
+      <div class="admin-link"><a href="{{pathFor 'postSubmit'}}">Submit Post</a></div>
+      <div class="login-link">{{> loginButtons}}</div>
     </div>
+
   </header>
 </template>
