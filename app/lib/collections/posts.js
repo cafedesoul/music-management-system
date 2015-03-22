@@ -5,7 +5,8 @@ Meteor.methods({
     check(Meteor.userId(), String);
     check(postAttributes, {
       title: String,
-      url: String
+      url: String,
+      slug: String
     });
 
     var postWithSameLink = Posts.findOne({url: postAttributes.url});
@@ -27,6 +28,6 @@ Meteor.methods({
     return {
       _id: postId
     };
-    
+
   }
 });
