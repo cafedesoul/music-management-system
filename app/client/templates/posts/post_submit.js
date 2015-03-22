@@ -7,6 +7,8 @@ Template.postSubmit.events({
       title: $(e.target).find('[name=title]').val()
     };
 
+    post.slug = slugify(post.title);
+
     post._id = Posts.insert(post);
     Router.go('postPage', post);
   }
