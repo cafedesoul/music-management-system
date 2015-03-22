@@ -20,7 +20,7 @@ Meteor.methods({
     var user = Meteor.user();
     var post = _.extend(postAttributes, {
       userId: user._id, 
-      author: user.username, 
+      author: user.emails[0].address, 
       submitted: new Date()
     });
 
