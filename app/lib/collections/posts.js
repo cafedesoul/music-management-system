@@ -1,12 +1,17 @@
 Posts = new Mongo.Collection('posts');
 
+NonEmptyString = Match.Where(function (x) {
+  check(x, String);
+  return x.length > 0;
+});
+
 Meteor.methods({
   postInsert: function(postAttributes) {
     check(Meteor.userId(), String);
     check(postAttributes, {
-      title: String,
-      url: String,
-      slug: String
+      title: NonEmptyString,
+      url: NonEmptyString,
+      slug: NonEmptyString
     });
 
     var postWithSameLink = Posts.findOne({url: postAttributes.url});
