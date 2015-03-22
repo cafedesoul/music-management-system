@@ -4,7 +4,9 @@
     <h1 class="pull-left"><a href="{{pathFor 'postsList'}}">Home</a></h1>
 
     <div class="pull-right">
-      <div class="admin-link"><a href="{{pathFor 'postSubmit'}}">Submit Post</a></div>
+      {{#if currentUser}}
+        <div class="admin-link"><a href="{{pathFor 'postSubmit'}}">Submit Post</a></div>
+      {{/if}}
       <div class="login-link">{{> loginButtons}}</div>
     </div>
 
