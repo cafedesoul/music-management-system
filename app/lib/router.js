@@ -9,7 +9,7 @@ Router.route('/', {name: 'postsList'});
 
 Router.route('/posts/:slug', {
   name: 'postPage',
-  data: function() { return Posts.find({ slug: this.params.slug }).fetch()[0]; }
+  data: function() { return Posts.findOne({ slug: this.params.slug }); }
 });
 
 Router.route('/submit', {name: 'postSubmit'});
