@@ -14,11 +14,11 @@ Meteor.methods({
       slug: NonEmptyString
     });
 
-    var postWithSameLink = Posts.findOne({url: postAttributes.url});
+    var postWithSameLink = Posts.findOne({slug: postAttributes.slug});
     if (postWithSameLink) {
       return {
         postExists: true,
-        _id: postWithSameLink._id
+        slug: postWithSameLink.slug
       }
     }
 
