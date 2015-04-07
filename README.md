@@ -1,6 +1,6 @@
 # Music Management System
 
-## A platform specifically built for music bloggers.
+**A platform specifically built for music bloggers.**
 
 My goal with this system is twofold: 1) Set up a Meteor-based application, 2) Create a blog that can play music (a la new Myspace) while exploring the site.
 
