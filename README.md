@@ -4,7 +4,7 @@
 
 My goal with this system is twofold: 1) Set up a Meteor-based application, 2) Create a blog that can play music (a la new Myspace) while exploring the site.
 
-Because I am building this in my spare time, and I am learning the Meteor and History API while I'm building it, this will be a long and drawn-out process.
+Because I am building this in my spare time, and I am learning Meteor and the History API while I'm building it, this will be a long and drawn-out process.
 
 ## Version 1.0 Goals
 
